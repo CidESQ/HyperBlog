@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home</title>
+    <style>
+        /* Estilos generales para la página */
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Montserrat:wght@900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+
+        /* Estilos para el fondo de la página */
+        body {
+            background-image: url("./images/background_image.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #14191c;
+        }
+
+        /* Estilos para la lista no ordenada en la barra de navegación */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Estilos para los elementos de la lista en la barra de navegación */
+        nav ul li {
+            float: left;
+        }
+
+        /* Estilos para los enlaces en la barra de navegación */
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: font-size 0.2s;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        /* Estilos para los enlaces en la barra de navegación al pasar el cursor por encima */
+        nav ul li a:hover {
+            color: #1a76a8;
+            background-color: transparent;
+            font-size: 22px;
+        }
+
+        /* Estilos para el contenedor principal del contenido */
+        .contendor {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        /* Estilos para el nombre en el contenedor */
+        .nombre {
+            position: absolute;
+            left: 25%;
+            top: 110px;
+            font-size: 110px;
+            margin: 10px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        /* Estilos para el apellido en el contenedor */
+        .apellido {
+            position: absolute;
+            left: 25%;
+            top: 183px;
+            font-size: 110px;
+            margin: 10px;
+            font-family: "Kanit", sans-serif;
+        }
+
+        /* Estilos para la ocupación en el contenedor */
+        .ocupacion {
+            position: absolute;
+            left: 25%;
+            top: 325px;
+            font-size: 23px;
+            margin: 10px;
+            font-family: "Source Code Pro", monospace;
+        }
+
+        /* Estilos para el contenedor de botones */
+        .boton-container {
+            position: relative;
+            left: 25%;
+            top: 380px;
+        }
+
+        /* Estilos para los botones */
+        .boton-container .boton {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 15px;
+            padding: 10px 20px;
+        }
+
+        /* Estilos para los enlaces dentro de los botones al pasar el cursor por encima */
+        .boton-container .boton a:hover {
+            color: #1a76a8;
+        }
+
+        /* Estilos para los enlaces dentro de los botones */
+        .boton-container .boton a {
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            font-size: 17px;
+            display: inline-block;
+        }
+
+        /* Estilos para el espacio entre los botones */
+        .boton-container .boton span {
+            margin-inline: 45px;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 5px 10px;
+        }
+
+        /* Estilos para el contenedor de redes sociales */
+        .redes-sociales {
+            position: relative;
+            top: 670px;
+            left: 100px;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        /* Estilos para los botones de redes sociales */
+        .boton-red-social {
+            margin: 0 10px;
+        }
+
+        /* Estilos para los enlaces de redes sociales */
+        .redes-sociales a {
+            padding: 20px;
+        }
+
+        /* Estilos para las imágenes de redes sociales */
+        .boton-red-social img {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+        }
+
+        /* Estilos para las imágenes de redes sociales al pasar el cursor por encima */
+        .boton-red-social img:hover {
+            width: 55px;
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+<!-- Cuerpo de la página -->
+
+<div>
+    <nav class="menu">
+        <!-- Barra de navegación -->
+        <ul>
+            <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/resume.html">Resume</a></li>
+            <li><a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div>
+    <section class="contendor">
+        <!-- Contenedor principal del contenido -->
+        <div class="nombre">CID</div>
+        <div class="apellido">ESQUIVEL</div>
+        <div class="ocupacion">Computer Science Student</div>
+    </section>
+</div>
+
+<div class="boton-container">
+    <!-- Contenedor de botones -->
+    <button class="boton">
+        <!-- Botón para el enlace al currículum -->
+        <a href="resume.html">
+            <span> Resume </span>
+        </a>
+    </button>
+    <button class="boton">
+        <!-- Botón para el enlace al portafolio -->
+        <a href="portfolio.html">
+            <span> Portfolio </span>
+        </a>
+    </button>
+</div>
+<div>
+    <div class="redes-sociales">
+        <!-- Contenedor de redes sociales -->
+        <a id="img1" href="https://www.instagram.com/cid_gon/" target="_blank" class="boton-red-social">
+            <img src="icons8-instagram-48.png" alt="Instagram"/>
+        </a>
+        <a href="https://web.whatsapp.com" target="_blank" class="boton-red-social">
+            <img src="icons8-whatsapp-48.png" alt="WhatsApp"/>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="boton-red-social">
+            <img src="icons8-linkedin-48.png" alt="LinkedIn"/>
+        </a>
+    </div>
+</div>
+</body>
+</html>
