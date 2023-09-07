@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     color: darkgreen;
+=======
+    color: rosybrown;
+>>>>>>> 95b8190 (Modifique la cabecera y el color del texto)
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
